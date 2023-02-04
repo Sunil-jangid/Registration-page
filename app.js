@@ -31,10 +31,10 @@ app.post("/",function(req,res){
         ]
 };
     const jsonData=JSON.stringify(data);
-    const url = "https://us21.api.mailchimp.com/3.0/lists/cb90d6f4ec"
+    const url = "https://us21.api.mailchimp.com/3.0/lists/key"
     const options={
         method:"POST",
-        auth:"sunil:fcc12a8720e99c95bb3eec11d87a9417-us21"
+        auth:"sunil:Apikey"
     }
     const request=https.request(url,options,function(response){
         if(response.statusCode==200){
@@ -55,5 +55,3 @@ app.post("/failure",function(req,res){
 });
 app.listen(3000);
 
-// fcc12a8720e99c95bb3eec11d87a9417-us21
-//  cb90d6f4ec
